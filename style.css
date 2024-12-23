@@ -1,0 +1,225 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Seção de Introdução com imagem de fundo */
+#intro {
+    background-image: url('https://i.pinimg.com/736x/e2/81/c3/e281c3461fd7c7ccb2347b8d9b651110.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex; /* Centraliza o conteúdo */
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    position: relative;
+}
+
+#intro h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+#intro p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Ênfase em "100% Grátis" */
+#intro .highlight {
+    color: #ffcc00;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Animação Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Seção Sobre o Curso */
+#sobre {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 3s ease-out;
+}
+
+#sobre h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Seção sobre Ramon Oliveira */
+#ramon {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#ramon img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#ramon h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#ramon p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Seção Benefícios */
+#beneficios {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 4s ease-out;
+}
+
+#beneficios h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/* Contêiner dos cards */
+.carousel-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.benefit-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Seção de Inscrição */
+#inscricao {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 5s ease-out;
+}
+
+#inscricao h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+input,
+button {
+    padding: 12px;
+    font-size: 1.2rem;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block; /* Garante centralização horizontal */
+}
+
+button {
+    background-color: #008c8c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004e4e;
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+    background-color: #f1f1f1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #intro h1 {
+        font-size: 2.5rem;
+    }
+
+    #intro p {
+        font-size: 1.2rem;
+    }
+
+    #sobre h2,
+    #beneficios h2,
+    #inscricao h2 {
+        font-size: 2rem;
+    }
+
+    .benefit-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #intro h1 {
+        font-size: 2rem;
+    }
+
+    #intro p {
+        font-size: 1rem;
+    }
+
+    input,
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+
